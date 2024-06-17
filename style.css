@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    background: url(background.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .box {
+    width: 80%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    margin: 20px 0;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#c1d9fb, #cbd1f8);
+    transform: translate(490px, 150px);
+}
+
+.container .box nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container .box nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.container .box nav ul li {
+    list-style: none;
+}
+
+.container .box nav ul li a {
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #242329;
+    transition: 0.3s;
+}
+
+.container .box nav ul li a:hover {
+    color: #7c8bd1;
+}
+
+.container .box nav .logo {
+    font-size: 35px;
+    color: #242329;
+    font-weight: bold;
+}
+
+.container .box .contains {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 70px;
+}
+
+
+.contains .section-1.first {
+    width: 60%;
+    margin-top: -130px;
+}
+
+.contains .section-1 h1,
+.contains .section-1 h2 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #242329;
+}
+
+.contains .section-1 h3 {
+    color: #6f34fe;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contains .section-1 p {
+    font-size: 18px;
+    color: #505052;
+    margin-bottom: 50px;
+}
+
+.contains .section-1 .btn {
+    padding: 15px 20px;
+    background-color: #6f34fe;
+    border: 1px solid #6f34fe;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.contains .section-1 .btn:hover {
+    color: #6f34fe;
+    transition: 0.3s;
+    background-color: #cdddf3;
+    border: 1px solid;
+}
+
+.contains .section-2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contains .section-2 img {
+    width: 80%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+.contains .section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+
+.contains .section-3 a i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #7c8bd1;
+    transition: 0.3s;
+}
+
+.contains .section-3 i:hover {
+    color: #6f34fe;
+}
+
+.about-card {
+    width: 75%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    margin: 20px 0;
+}
+
+.about-card .contains {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.about-card .section-1 {
+    width: 100%;
+    text-align: center;
+}
+
+.about-card .section-1 h2 {
+    font-size: 34px;
+    color: #6f34fe;
+}
+
+.about-card .section-1 p {
+    color: #505052;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btna {
+    display: block;
+    margin: -20px 0 0 250px;
+    text-decoration: none;
+    z-index: 99;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.project-card {
+    width: calc(100% - 180px);
+    height: 270px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    margin-bottom: 40px;
+}
+
+.contains1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
